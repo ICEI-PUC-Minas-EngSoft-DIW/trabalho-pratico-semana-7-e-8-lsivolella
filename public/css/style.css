@@ -1,0 +1,392 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* inicio header */
+.header-container {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border-radius: 5px;
+    height: 80px;
+}
+
+.logo-container {
+    flex: 0 0 15%;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.header-content .search-box {
+    margin: auto 0px;
+    border-radius: 15px;
+    padding: 0 10px;
+    height: 25px;
+    width: 200px;
+    border-style: double;
+}
+
+.header-content nav ul li {
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.header-content nav ul li button {
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    top: 0px;
+    width: 100%;
+}
+
+/* fim header */
+
+/* inicio page-container */
+.page-container {
+    display: flex;
+}
+
+/* fim page-container */
+
+/* inicio aside */
+aside {
+    background-color: darkgray;
+    flex: 0 0 15%;
+    padding: 20px;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: double;
+}
+
+.side-menu-box ul {
+    text-align: center;
+}
+
+.side-menu-box ul li {
+    margin: 5px 0px;
+}
+
+/* Botão do Item Menu Lateral */
+.side-menu-box ul li button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+/* Componente Botões Menu Lateral */
+.side-menu-buttons {
+    margin-bottom: 40px;
+}
+
+/* fim aside */
+
+/* inicio main */
+main {
+    flex: 1;
+}
+
+/* inicio adds-container */
+.adds-container {
+    text-align: center;
+    margin: 10px;
+}
+
+.adds-menu ul {
+    list-style-type: none;
+}
+
+.adds-menu ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.adds-menu ul li button {
+    padding: 3px 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.adds {
+    height: 200px;
+    background: url(https://picsum.photos/600/200) no-repeat center center;
+    margin: 10px;
+}
+
+/* fim adds-container */
+
+/* inicio recomended-container */
+/* fim recomended-container */
+
+/* inicio recently-uploaded-container */
+/* fim recently-uploaded-container */
+
+/* inicio video-box */
+.videos-container {
+    display: flex;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-box {
+    width: 230px;
+    height: 200px;
+    margin: 10px 5px;
+    display:inline-block;
+}
+
+.video-box img {
+    display: block;
+    margin: 0 auto;
+}
+
+.video-author {
+    margin: 5px 0px;
+}
+
+.video-title {
+    margin: 5px 0px;
+}
+
+.video-footer {
+    display: flex;
+    margin: 5px 0px;
+}
+
+.video-views {
+    float: left;
+    margin-right: 50px;
+}
+
+.video-upload-age {
+    float: left;
+}
+
+/* fim video-box */
+/* fim main */
+
+/* inicio footer */
+footer {
+    clear: both;
+    text-align: right;
+    padding-right: 50px;
+}
+
+/* fim footer */
+
+@media screen and (max-width:600px) {
+
+    /* inicio header */
+    header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
+
+    .header-container {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header-container .search-box {
+        display: none;
+    }
+
+    .header-container nav {
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .top-menu {
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 0%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        transition: height 0.3s;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -o-transition: height 0.3s;
+    }
+
+    .top-menu li {
+        display: block;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .top-menu li a {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        width: 50px;
+        height: inherit;
+        position: absolute;
+        top: 25px;
+        right: 0px;
+        line-height: 60px;
+        z-index: 999;
+    }
+
+    .menu-icon span {
+        font-size: 1.7em;
+    }
+
+    #menu-toggle:checked~.top-menu {
+        height: 100%;
+    }
+
+    #menu-toggle:checked+.menu-icon #close {
+        display: block;
+    }
+
+    #menu-toggle:not(checked)~.menu-icon #close {
+        display: none;
+    }
+
+    #menu-toggle:not(checked)~.menu-icon #open {
+        display: block;
+    }
+
+    #menu-toggle:checked+.menu-icon #open {
+        display: none;
+    }
+
+    /* fim header */
+
+    /* inicio aside */
+    aside {
+        display: none;
+    }
+
+    /* fim aside */
+
+    .adds-container {
+        margin-top: 100px;
+    }
+
+}

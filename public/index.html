@@ -1,13 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
+    <title>Home Page - Pessoas e Produções</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols" />
 </head>
+
 <body>
-    <h1>Olá mundo</h1>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="https://picsum.photos/200/60" alt="logo">
+            </div>
+            <div class="header-content">
+                <input type="text" class="search-box" placeholder="search...">
+                <nav class="header-nav">
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">
+                        <i class="material-symbols" id="open">menu</i>
+                        <i class="material-symbols" id="close">cancel</i>
+                    </label>
+                    <ul class="top-menu">
+                        <li><a href="#"><button>My Channel</button></a></li>
+                        <li><a href="#"><button>Upload</button></a></li>
+                        <li><a href="#"><button>Notifications</button></a></li>
+                        <li><a href="#"><button>Settings</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <aside>
+            <nav class="side-menu-box">
+                <ul class="side-menu-buttons">
+                    <li><a href="#"><button>Home</button></a></li>
+                    <li><a href="#"><button>My Channel</button></a></li>
+                    <li><a href="#"><button>Trending</button></a></li>
+                    <li><a href="#"><button>Subscription</button></a></li>
+                    <li><a href="#"><button>History</button></a></li>
+                    <li><a href="#"><button>Watch Later</button></a></li>
+                </ul>
+                <ul class="side-menu-subscriptions">
+                    <li>
+                        <label>
+                            <input type="checkbox">Subscription 1
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">Subscription 2
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">Subscription 3
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">Subscription 4
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <section class="adds-container">
+                <nav class="adds-menu">
+                    <ul>
+                        <li><a href="#"><button>Home</button></a></li>
+                        <li><a href="#"><button>Trending</button></a></li>
+                        <li><a href="#"><button>Subscription</button></a></li>
+                    </ul>
+                </nav>
+
+                <div class="adds">
+                </div>
+            </section>
+
+            <section class="recommended-container">
+                <p>Recommended</p>
+                <div class="videos-container">
+                    <article class="video-box">
+                        <img class = "video-image" src="https://picsum.photos/230/120" alt="preview">
+                        <h4 class="video-title">This is the video title</h3>
+                            <p class="video-author">Mr. Uploader</p>
+                            <div class="video-footer">
+                                <p class="video-views">100 views</p>
+                                <p class="video-upload-age">1 month ago</p>
+                            </div>
+                    </article>
+                    <article class="video-box">
+                        <img class = "video-image" src="https://picsum.photos/230/120" alt="preview">
+                        <h4 class="video-title">This is the video title</h3>
+                            <p class="video-author">Mr. Uploader</p>
+                            <div class="video-footer">
+                                <p class="video-views">100 views</p>
+                                <p class="video-upload-age">1 month ago</p>
+                            </div>
+                    </article>
+                    <article class="video-box">
+                        <img class = "video-image" src="https://picsum.photos/230/120" alt="preview">
+                        <h4 class="video-title">This is the video title</h3>
+                            <p class="video-author">Mr. Uploader</p>
+                            <div class="video-footer">
+                                <p class="video-views">100 views</p>
+                                <p class="video-upload-age">1 month ago</p>
+                            </div>
+                    </article>
+                    <article class="video-box">
+                        <img class = "video-image" src="https://picsum.photos/230/120" alt="preview">
+                        <h4 class="video-title">This is the video title</h3>
+                            <p class="video-author">Mr. Uploader</p>
+                            <div class="video-footer">
+                                <p class="video-views">100 views</p>
+                                <p class="video-upload-age">1 month ago</p>
+                            </div>
+                    </article>
+                    <article class="video-box">
+                        <img class = "video-image" src="https://picsum.photos/230/120" alt="preview">
+                        <h4 class="video-title">This is the video title</h3>
+                            <p class="video-author">Mr. Uploader</p>
+                            <div class="video-footer">
+                                <p class="video-views">100 views</p>
+                                <p class="video-upload-age">1 month ago</p>
+                            </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="recently-uploaded-container">
+                <p>Recently Uploaded</p>
+                <div class="videos-container">
+                    <article class="video-box">
+                        <img class = "video-image" src="https://picsum.photos/230/120" alt="preview">
+                        <h4 class="video-title">This is the video title</h3>
+                            <p class="video-author">Mr. Uploader</p>
+                            <div class="video-footer">
+                                <p class="video-views">100 views</p>
+                                <p class="video-upload-age">1 month ago</p>
+                            </div>
+                    </article>
+                    <article class="video-box">
+                        <img class = "video-image" src="https://picsum.photos/230/120" alt="preview">
+                        <h4 class="video-title">This is the video title</h3>
+                            <p class="video-author">Mr. Uploader</p>
+                            <div class="video-footer">
+                                <p class="video-views">100 views</p>
+                                <p class="video-upload-age">1 month ago</p>
+                            </div>
+                    </article>
+                    <article class="video-box">
+                        <img class = "video-image" src="https://picsum.photos/230/120" alt="preview">
+                        <h4 class="video-title">This is the video title</h3>
+                            <p class="video-author">Mr. Uploader</p>
+                            <div class="video-footer">
+                                <p class="video-views">100 views</p>
+                                <p class="video-upload-age">1 month ago</p>
+                            </div>
+                    </article>
+                    <article class="video-box">
+                        <img class = "video-image" src="https://picsum.photos/230/120" alt="preview">
+                        <h4 class="video-title">This is the video title</h3>
+                            <p class="video-author">Mr. Uploader</p>
+                            <div class="video-footer">
+                                <p class="video-views">100 views</p>
+                                <p class="video-upload-age">1 month ago</p>
+                            </div>
+                    </article>
+                    <article class="video-box">
+                        <img class = "video-image" src="https://picsum.photos/230/120" alt="preview">
+                        <h4 class="video-title">This is the video title</h3>
+                            <p class="video-author">Mr. Uploader</p>
+                            <div class="video-footer">
+                                <p class="video-views">100 views</p>
+                                <p class="video-upload-age">1 month ago</p>
+                            </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        Copyright (c) Lucas Sivolella - PUC Minas
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
+
 </html>
