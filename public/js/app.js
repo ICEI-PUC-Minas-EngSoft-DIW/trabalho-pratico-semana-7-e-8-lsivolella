@@ -46,12 +46,8 @@ const livros = [
   }
 ];
 
-// document.querySelectorAll('.video-image').forEach(element => {
-//   element.addEventListener('click', carregarConteudo);
-// });
-
-function carregarConteudo() {
-  window.location.href = 'html/detalhes.html'
+function carregarConteudo(id) {
+  window.location.href = `html/detalhes.html?id=${id}`;
 }
 
 document.addEventListener("DOMContentLoaded", popularHome);
@@ -70,7 +66,7 @@ function criarCartao(livro) {
     </div>
   `;
 
-  artigo.addEventListener("click", carregarConteudo);
+  artigo.addEventListener("click", () => carregarConteudo(livro.id));
   return artigo;
 }
 

@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Detalhes do Livro</title>
     <link rel="stylesheet" href="../css/detalhes.css">
-    <script src="../js/app.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols" />
 </head>
+
 <body>
-    <h1>Olá mundo</h1>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="https://picsum.photos/200/60" alt="logo">
+            </div>
+            <div class="header-content">
+                <h2>Detalhes do Livro</h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="detalhes-container">
+            <div class="detalhes-imagem">
+                <img id="livro-imagem" src="" alt="Capa do livro">
+            </div>
+
+            <div class="detalhes-info">
+                <h2 id="livro-titulo"></h2>
+                <p id="livro-subtitulo"></p>
+                <p><strong>Autor:</strong> <span id="livro-autor"></span></p>
+                <p><strong>Ano:</strong> <span id="livro-ano"></span></p>
+                <p><strong>Páginas:</strong> <span id="livro-paginas"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright (c) Lucas Sivolella - PUC Minas</p>
+    </footer>
+    <script src="../js/detalhes.js"></script>
 </body>
+
 </html>
