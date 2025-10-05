@@ -12,32 +12,31 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Lucas Sivolella
+- Matricula: 902408
+- Proposta de projeto escolhida: Pessoas e Produções
+- Breve descrição sobre seu projeto: Layout de um site feito as linguaguens HTML e CSS (no momento sem a implementação do Bootstrap). Site capaz de realizar o carregamento dinâmico de informações.
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+![CSS Puro](public/img/print_home.png)
 
 ## Print da página de detalhes do item
 
-<<  COLOQUE A IMAGEM AQUI >>
+![CSS Puro](public/img/print_detalhes.png)
 
-## Cole aqui abaixo a estrutura JSON utilizada no app.js
+## Estrutura JSON utilizada no app.js
 
 ```javascript
-const dados = [
+const livros = [
   {
-    "id": 1,
-    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
-    "descricao": "Novo plano do transporte público.",
-    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    "categoria": "Cidades",
-    "autor": "Joana Ribeiro",
-    "data": "2025-03-30",
-    "imagem": "img/mobilidade.jpg"
+    id: 1,
+    titulo: "A Game of Thrones",
+    subtitulo: "A Song of Ice and Fire — Book 1",
+    autor: "George R. R. Martin",
+    ano: 1996,
+    imagem: "https://picsum.photos/seed/agot/230/120",
+    paginas: 694
   }
 ]
 ```
